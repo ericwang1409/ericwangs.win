@@ -8,16 +8,13 @@ export default function Page() {
         Hey, I&apos;m <strong>Eric.</strong>
       </h1>
       <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
+        {`I'm an undergraduate student at Harvard College pursuing a degree in Computer Science and Math. My interests lie in AI safety, security, and alignment, but I'm also passionate about building software products. I'm currently on a gap semester at Redwood Research.`}
       </p>
       <div className="my-8">
         <Experiences />
       </div>
-      <div className="my-8">
+      <h3 className="text-lg font-semibold mb-4">Writings</h3>
+      <div>
         <BlogPosts />
       </div>
     </section>
