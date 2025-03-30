@@ -134,7 +134,7 @@ function Footer() {
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
-                className: "flex w-full justify-between",
+                className: "flex w-full justify-between mb-8",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "",
@@ -264,7 +264,7 @@ function getMDXData(dir) {
 function getBlogPosts() {
     return getMDXData(__TURBOPACK__imported__module__$5b$externals$5d2f$path__$5b$external$5d$__$28$path$2c$__cjs$29$__["default"].join(process.cwd(), 'app', 'writings', 'posts'));
 }
-function formatDate(date, includeRelative = false) {
+function formatDate(date, includeRelative = false, numerical = false) {
     let currentDate = new Date();
     if (!date.includes('T')) {
         date = `${date}T00:00:00`;
@@ -283,11 +283,19 @@ function formatDate(date, includeRelative = false) {
     } else {
         formattedDate = 'Today';
     }
-    let fullDate = targetDate.toLocaleString('en-us', {
-        month: 'long',
-        day: 'numeric',
-        year: 'numeric'
-    });
+    let fullDate = "";
+    if (numerical) {
+        fullDate = targetDate.toLocaleString('en-us', {
+            month: 'long',
+            day: 'numeric',
+            year: 'numeric'
+        });
+    } else {
+        const yyyy = targetDate.getFullYear();
+        const mm = String(targetDate.getMonth() + 1).padStart(2, '0');
+        const dd = String(targetDate.getDate()).padStart(2, '0');
+        fullDate = `${yyyy}-${mm}-${dd}`;
+    }
     if (!includeRelative) {
         return fullDate;
     }
@@ -308,12 +316,12 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$writings$2f$utils$2e$
 const baseUrl = 'https://portfolio-blog-starter.vercel.app';
 async function sitemap() {
     let blogs = (0, __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$writings$2f$utils$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["getBlogPosts"])().map((post)=>({
-            url: `${baseUrl}/blog/${post.slug}`,
+            url: `${baseUrl}/writings/${post.slug}`,
             lastModified: post.metadata.publishedAt
         }));
     let routes = [
         '',
-        '/blog'
+        '/writings'
     ].map((route)=>({
             url: `${baseUrl}${route}`,
             lastModified: new Date().toISOString().split('T')[0]

@@ -8,7 +8,11 @@ export default function Page() {
         Hey, I&apos;m <strong>Eric.</strong>
       </h1>
       <p className="mb-4">
-        {`I'm an undergraduate student at Harvard College pursuing a degree in Computer Science and Math. My interests lie in AI safety, security, and alignment, but I'm also passionate about building software products. I'm currently on a gap semester at Redwood Research.`}
+        I&apos;m an undergraduate student at Harvard College pursuing a degree
+        in <strong>Computer Science and Math</strong>. My interests lie in AI
+        safety, security, and alignment, but I&apos;m also passionate about
+        building software products. I&apos;m currently on a gap semester
+        interning at <strong>Redwood Research</strong>.
       </p>
       <div className="my-8">
         <Experiences />

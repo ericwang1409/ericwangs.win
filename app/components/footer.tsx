@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <>
       <Separator className="my-4" />
-      <footer className="flex w-full justify-between">
+      <footer className="flex w-full justify-between mb-8">
         <div className="">
           <p className="text-neutral-600 dark:text-neutral-300">
             © {new Date().getFullYear()} MIT Licensed
