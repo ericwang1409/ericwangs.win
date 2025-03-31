@@ -34,7 +34,7 @@ export default function Page() {
       <div className="mb-8 tracking-tighter">
         <h1 className="font-semibold text-2xl tracking-tighter">Readings</h1>
         <h2 className="tracking-tigether">
-          Posts, articles, books I&apos;ve found interesting
+          Posts, articles, books I&apos;ve enjoyed reading.
         </h2>
       </div>
       <div className="relative w-full">
