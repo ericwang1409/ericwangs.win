@@ -1,5 +1,6 @@
 import { BlogPosts } from "./components/posts";
 import Experiences from "./components/experiences";
+import Projects from "./components/projects";
 
 export default function Page() {
   return (
@@ -16,6 +17,9 @@ export default function Page() {
       </p>
       <div className="my-8">
         <Experiences />
+      </div>
+      <div>
+        <Projects />
       </div>
       <h3 className="text-lg font-semibold mb-4">Writings</h3>
       <div>
