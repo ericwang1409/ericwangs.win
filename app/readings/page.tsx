@@ -15,6 +15,10 @@ const originalLinks = new Map([
     "A defense of slowness at the end of the world",
     "https://longerramblings.substack.com/p/a-defence-of-slowness-at-the-end",
   ],
+  [
+    "The colors of her coat",
+    "https://www.astralcodexten.com/p/the-colors-of-her-coat",
+  ],
 ]);
 
 export default function Page() {

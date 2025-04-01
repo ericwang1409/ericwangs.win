@@ -10,7 +10,10 @@ const navItems = {
   "/writings": {
     name: "writings",
   },
-  "/resume": {
+  "/projects": {
+    name: "projects",
+  },
+  "/resume.pdf": {
     name: "resume",
   },
 };

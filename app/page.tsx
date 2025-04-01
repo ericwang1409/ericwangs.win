@@ -21,10 +21,6 @@ export default function Page() {
       <div>
         <Projects />
       </div>
-      <h3 className="text-lg font-semibold mb-4">Writings</h3>
-      <div>
-        <BlogPosts />
-      </div>
     </section>
   );
 }
