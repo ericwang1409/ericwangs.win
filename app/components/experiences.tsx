@@ -20,7 +20,7 @@ const experiences: Experience[] = [
     time: "Summer 2025",
     company: "LinkedIn",
     role: "SWE Intern",
-    description: "Don't know yet",
+    description: "Infra Engineering",
     location: "Sunnyvale, CA",
     companyLogo: "/images/linkedin.png",
   },
