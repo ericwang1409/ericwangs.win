@@ -10,10 +10,10 @@ export default function Page() {
       </h1>
       <p className="mb-4">
         I&apos;m an undergraduate student at Harvard College pursuing a degree
-        in <strong>Computer Science and Math</strong>. My interests lie in AI
-        safety, security, and alignment, but I&apos;m also passionate about
-        building software products. I&apos;m currently on a gap semester
-        interning at <strong>Redwood Research</strong>.
+        in <strong>Computer Science and Math</strong>. My interests lie in
+        systems infrastucture and AI alignment. This summer, I&apos;m currently
+        interning at <strong>LinkedIn</strong> working on the Streams IO
+        Distribution team.
       </p>
       <div className="my-8">
         <Experiences />
