@@ -19,6 +19,7 @@ const originalLinks = new Map([
     "The colors of her coat",
     "https://www.astralcodexten.com/p/the-colors-of-her-coat",
   ],
+  ["Nabeel", "https://nabeelqu.co/"],
 ]);
 
 export default function Page() {
